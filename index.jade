@@ -1,0 +1,40 @@
+extends base
+block title
+  title Main page
+block content
+  section.slider
+    div.container
+      div.row
+        div.col-md-12
+          div.main-slider
+            - for (var a = 1; a < 10; a++)
+              div.main-slider_item
+                img(src="http://placehold.it/1024x400")
+                //img(src="img/main-slider/slider-img-"+a+".png")
+                div.main-slider_item-description.hidden-xs
+                  span Slide one
+                  p Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.
+          div.main-slider_nav
+            - for (var c = 1; c < 10; c++)
+              div.main-slider_item
+                img(src="http://placehold.it/200x150")
+                //img(src="img/main-slider/slider_min-img-"+c+".png")
+  section.features
+    .container
+      .row
+        .col-md-4.col-sm-12.col-xs-12
+          .features-item
+            .features-item_heading Lorem ipsum dolore sit amet
+            p.features-item_body Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+            button.my-btn.features-item_btn More
+        .col-md-4.col-sm-12.col-xs-12
+          .features-item
+            .features-item_heading Lorem ipsum dolore sit amet
+            p.features-item_body Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+            button.my-btn.features-item_btn More
+        .col-md-4.col-sm-12.col-xs-12
+          .features-item
+            .features-item_heading Lorem ipsum dolore sit amet
+            p.features-item_body Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
+            button.my-btn.features-item_btn More
+  section.works
