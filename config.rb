@@ -3,7 +3,7 @@ require 'compass/import-once/activate'
 
 add_import_path "bower_components/bootstrap-sass/assets/stylesheets"
 add_import_path "bower_components/font-awesome/scss"
-add_import_path "slick"
+add_import_path "bower_components/slick-carousel/slick"
 
 # Set this to the root of your project when deployed:
 http_path = "/"

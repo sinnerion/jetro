@@ -5,8 +5,6 @@ html(lang="en")
     block title
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width", initial-scale="1", maximum-scale="1")
-    // link(rel="stylesheet", href="slick/slick.css")
-    // link(rel="stylesheet", href="slick/slick-theme.css")
     link(rel="stylesheet", href="css/fonts.min.css")
     link(rel="stylesheet", href="css/main.min.css")
   body
@@ -21,14 +19,13 @@ html(lang="en")
             nav.main-nav.navbar.navbar-default.pull-right
               div.container-fluid
                 div.navbar-header
-                  button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="main-nav", aria-expanded="false")
+                  button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#main-nav", aria-expanded="false")
                     span.sr-only Toggle navigation
                     span.icon-bar
                     span.icon-bar
                     span.icon-bar
                 div.collapse.navbar-collapse#main-nav
                   ul.nav.navbar-nav
-                    - for ( i=0; i < 6; i++)
                     - navList = ['Home', 'About us', 'Blog', 'Portfolio', 'Contact us']
                       each item in navList
                         li
@@ -67,12 +64,11 @@ html(lang="en")
                   a(href="mailto:information@jetro.com") information@jetro.com
                   a(href="tel:12223334444") 1.222.333.4444
                 ul.list-unstyled.footer-social
-                  - for (j = 0; j < 6; j++)
                   - footerSocial = ['footer-social-fb', 'footer-social-tw', 'footer-social-mail', 'footer-social-rss', 'footer-social-vm']
                     each item in footerSocial
                       li
                         a(href="#", class=item)
   script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
-  script(type="text/javascript", src="slick/slick.min.js")
+  script(type="text/javascript", src="bower_components/slick-carousel/slick/slick.min.js")
   script(type="text/javascript", src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")
   script(type="text/javascript", src="js/common.js")

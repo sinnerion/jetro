@@ -14,14 +14,58 @@ and (max-device-width : 991px) {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 767px) {
-
+  .main-nav {
+    width: 100%;
+    .navbar-toggle {
+      &:focus,
+      &:hover {
+        border: none;
+        background: $custom-red;
+        .icon-bar {
+          background: #fff;
+        }
+      }
+    }
+  }
+  #main-nav {
+    position: absolute;
+    z-index: 100;
+    padding-right: 5px;
+    right: 0;
+    margin: 0;
+    background: url('../img/main-bg.png') no-repeat center;
+    width: 100%;
+    border: none;
+    .navbar-nav {
+      margin: 0;
+      border: none;
+      box-shadow: none;
+      a {
+        text-align: right;
+        padding: 10px 0;
+      }
+    }
+  }
+  .features {
+    margin-bottom: 30px;
+    &-item {
+      margin-bottom: 15px;
+    }
+  }
 }
 @media only screen
 and (max-device-width : 480px) {
   .main-slider {
+    margin-bottom: 0;
     &_controls {
       font-size: 20px;
       top: 45%;
     }
+  }
+  .main-slider_nav {
+    display: none;
+  }
+  .main-footer .footer-info {
+    padding: 10px 15px;
   }
 }

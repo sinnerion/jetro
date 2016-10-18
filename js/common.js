@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    $('.more-block').slideUp();
+
+    // Main nav
+    $('.main-nav a').click(function(){
+        $('a.active').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    // Main slider
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -17,5 +26,10 @@ $(document).ready(function(){
         dots: false,
         centerMode: false,
         focusOnSelect: true
+    });
+
+    // More blocks
+    $('.more-btn').click(function(){
+        $(this).fadeOut(100).siblings('.more-block').slideDown(250);
     });
 });
