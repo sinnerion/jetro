@@ -1,6 +1,103 @@
 @import "vars";
 
 @media only screen
+and (min-device-width : 1190px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 7%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1166px)
+and (max-device-width : 1189px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 8%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1144px)
+and (max-device-width : 1165px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 7%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1120px)
+and (max-device-width : 1143px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 6%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1096px)
+and (max-device-width : 1119px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 5%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1072px)
+and (max-device-width : 1195px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 4%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1048px)
+and (max-device-width : 1171px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 4%;
+  }
+}
+
+@media only screen
+and (min-device-width : 1024px)
+and (max-device-width : 1147px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 3%;
+  }
+}
+
+@media only screen
+and (max-device-width : 1023px) {
+  .footer-sides:after,
+  .footer-sides:before,
+  .top-sides:after,
+  .top-sides:before {
+    width: 2%;
+  }
+}
+
+@media only screen
 and (max-device-width : 1199px) {
   .main-nav {
     width: 100%;
@@ -36,7 +133,6 @@ and (max-device-width : 1199px) {
   }
 }
 
-
 @media only screen
 and (max-device-width : 991px) {
   .main-slider {
@@ -47,16 +143,17 @@ and (max-device-width : 991px) {
       text-align: center;
     }
   }
-}
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 767px) {
   .features {
     margin-bottom: 30px;
     &-item {
       margin-bottom: 15px;
     }
   }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+
 }
 @media only screen
 and (max-device-width : 480px) {

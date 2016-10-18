@@ -6,7 +6,9 @@
 @import "fonts.min";
 @import "vars";
 @import "../img/sprites/footer-social/*.png";
+@import "../img/sprites/features/*.png";
 @include all-footer-social-sprites;
+@include all-features-sprites;
 
 /* General */
 body {
@@ -17,6 +19,42 @@ body {
   p {
     margin: 0;
     padding: 0;
+  }
+}
+.top-sides {
+  position: relative;
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(232, 102, 60, .5);
+    height: 60px;
+    top: 0;
+  }
+  &:after {;
+    left: 0;
+  }
+  &:before {
+    right: 0;
+  }
+}
+.footer-sides {
+  position: relative;
+  &:after,
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(232, 102, 60, .5);
+    height: 100%;
+    top: 0;
+  }
+  &:after {
+    left: 0;
+  }
+  &:before {
+    right: 0;
   }
 }
 .container {
@@ -117,11 +155,20 @@ body {
 .features {
   margin-bottom: 45px;
   &-item_heading {
+    position: relative;
+    padding-left: 59px;
     color: $custom-red;
     text-transform: uppercase;
     font-family: $accent-font;
     font-size: 18px;
     margin-bottom: 30px;
+    &-icon {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      left: 0%;
+      top: 0;
+    }
   }
   &-item_body {
     font-size: 12px;
