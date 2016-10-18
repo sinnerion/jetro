@@ -1,19 +1,7 @@
 @import "vars";
 
 @media only screen
-and (max-device-width : 991px) {
-  .main-slider {
-    &_item-description {
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      text-align: center;
-    }
-  }
-}
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 767px) {
+and (max-device-width : 1199px) {
   .main-nav {
     width: 100%;
     .navbar-toggle {
@@ -46,6 +34,23 @@ and (max-device-width : 767px) {
       }
     }
   }
+}
+
+
+@media only screen
+and (max-device-width : 991px) {
+  .main-slider {
+    &_item-description {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+}
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
   .features {
     margin-bottom: 30px;
     &-item {
