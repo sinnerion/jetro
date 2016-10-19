@@ -19,6 +19,7 @@ body {
   p {
     margin: 0;
     padding: 0;
+    color: $dark-txt;
   }
 }
 .top-sides {
@@ -56,9 +57,6 @@ body {
   &:before {
     right: 0;
   }
-}
-.container {
-  //padding: 0;
 }
 .my-btn {
   border: none;
@@ -278,6 +276,35 @@ body {
     border-left: 1px solid #dbdbdb;
   }
 }
+
+/* About us */
+.about-content {
+  font-size: 12px;
+  &_main {
+    margin-bottom: 24px;
+  }
+  &_main-img {
+    img {
+      width: 100%;
+    }
+    border: 1px solid $gray-border;
+    padding: 2px;
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  .about-quote {
+    position: relative;
+    margin-left: 50px;
+    font-family: $light-italic-font;
+    padding: 0 0 0 16px;
+    border-left: 8px solid $custom-red;
+    color: $dark-txt;
+  }
+}
+
 /* Footer */
 .main-footer {
   color: $main-txt;
