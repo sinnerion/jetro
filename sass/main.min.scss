@@ -116,11 +116,12 @@ body {
     background: rgba(232, 102, 60, .6);
     color: $main-txt;
     padding: 20px;
-    width: 40%;
+    width: 35%;
     span {
       display: block;
       text-transform: uppercase;
       margin-bottom: 15px;
+      font-family: $accent-font;
     }
     p {
       font-size: 12px;
@@ -183,6 +184,98 @@ body {
     font-size: 12px;
     font-family: $accent-font;
     padding: 0 10px;
+  }
+}
+/*--Works--*/
+.works {
+  margin-bottom: 48px;
+  &_hover-link {
+    -webkit-transition: all, .35s;
+    -moz-transition: all, .35s;
+    -ms-transition: all, .35s;
+    -o-transition: all, .35s;
+    transition: all, .35s;
+    position: absolute;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: #000;
+    opacity: .75;
+    button {
+      position: absolute;
+      display: block;
+      border: none;
+      outline: none;
+      width: 37px;
+      height: 37px;
+      left: 50%;
+      top: 50%;
+      margin-left: -18.5px;
+      margin-top: -18.5px;
+      font-size: 30px;
+      background: url('../img/icons/work_hover-icon.png') no-repeat center;
+      opacity: .85;
+      &:active {
+        opacity: 1;
+        -webkit-box-shadow: 0 0 10px 1px #fff;
+        -moz-box-shadow: 0 0 10px 1px #fff;
+        box-shadow: 0 0 10px 1px #fff;
+      }
+    }
+  }
+  &-heading {
+    position: relative;
+    font-size: 18px;
+    font-family: $accent-font;
+    color: $custom-red;
+    margin: 0 0 25px;
+    overflow: hidden;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: -120px;
+      top: 0;
+      background: url("../img/works-heading_bg.png") repeat-x center;
+    }
+  }
+  &-item {
+    cursor: pointer;
+    &_img {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &_name,
+    &_date {
+      font-family: $accent-font;
+      text-transform: uppercase;
+    }
+    &_name {
+      margin-bottom: 5px;
+      color: $gray-txt;
+    }
+    &_date {
+      color: $custom-red;
+      font-size: 11px;
+    }
+    &:hover .works_hover-link {
+      visibility: visible;
+    }
+  }
+  &-info {
+    padding: 15px;
+    border-bottom: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+    border-left: 1px solid #dbdbdb;
   }
 }
 /* Footer */

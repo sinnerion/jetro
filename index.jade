@@ -15,10 +15,10 @@ block content
                   span Slide one
                   p Lorem ipsum dolor sit amet, malorum recteque reprehendunt ea vel. Urbanitas adolescens vim te, per at tritani aperiri. Adhuc invenire convenire his ea.
           div.main-slider_nav
-            - for (var c = 1; c < 10; c++)
+            - for (var b = 1; b < 10; b++)
               div.main-slider_item
                 img(src="http://placehold.it/200x150")
-                //img(src="img/main-slider/slider_min-img-"+c+".png")
+                //img(src="img/main-slider/slider_min-img-"+b+".png")
   section.features
     .container
       .row
@@ -50,3 +50,17 @@ block content
             p.features-item_body.more-block Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posue re ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis. Aenean sodales nibh non lectus tempor a interdum justo ultricies.
             button.my-btn.features-item_btn.more-btn More
   section.works
+    .container
+      .row
+        .col-md-12
+          h3.works-heading Recent works
+        - for (var c = 1; c < 5; c++)
+          .col-md-3.col-sm-6.col-xs-12
+            .works-item
+              .works-item_img
+                .works_hover-link
+                  button(type="button")
+                img(src="img/works/works-item_"+c+".png")
+              .works-info
+                .works-item_name Lorem ipsum
+                .works-item_date June 15, 2016
