@@ -1,3 +1,4 @@
+include includes/index-additions
 doctype
 html(lang="en")
   head
@@ -26,10 +27,11 @@ html(lang="en")
                     span.icon-bar
                 div.collapse.navbar-collapse#main-nav
                   ul.nav.navbar-nav
-                    - navList = ['Home', 'About us', 'Blog', 'Portfolio', 'Contact us']
-                      each item in navList
+                    - navList = {'Home': 'index.html', 'About us': 'about.html', 'Blog': 'blog.html', 'Portfolio': 'portfolio.html', 'Contact us': 'contact.html'}
+                      each val, index in navList
                         li
-                          a(href="#")= item
+                          +link(val, index)
+        block page-heading
     block content
     footer.main-footer.footer-sides
       div.container
@@ -64,10 +66,10 @@ html(lang="en")
                   a(href="mailto:information@jetro.com") information@jetro.com
                   a(href="tel:12223334444") 1.222.333.4444
                 ul.list-unstyled.footer-social
-                  - footerSocial = ['footer-social-fb', 'footer-social-tw', 'footer-social-mail', 'footer-social-rss', 'footer-social-vm']
-                    each item in footerSocial
+                  - footerSocial = {'footer-social-fb': 'http://facebook.com', 'footer-social-tw': 'http://twitter.com', 'footer-social-mail': 'http://gmail.com', 'footer-social-rss': 'http://rss.com', 'footer-social-vm': 'http://vimeo.com'}
+                    each val, index in footerSocial
                       li
-                        a(href="#", class=item)
+                        +link(val)(class=index)
   script(type="text/javascript", src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
   script(type="text/javascript", src="bower_components/slick-carousel/slick/slick.min.js")
   script(type="text/javascript", src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js")

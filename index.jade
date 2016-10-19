@@ -1,4 +1,5 @@
 extends base
+include includes/index-additions
 block title
   title Main page
 block content
@@ -54,13 +55,14 @@ block content
       .row
         .col-md-12
           h3.works-heading Recent works
-        - for (var c = 1; c < 5; c++)
-          .col-md-3.col-sm-6.col-xs-12
-            .works-item
-              .works-item_img
-                .works_hover-link
-                  button(type="button")
-                img(src="img/works/works-item_"+c+".png")
-              .works-info
-                .works-item_name Lorem ipsum
-                .works-item_date June 15, 2016
+        - worksNames = ['Character  Design', 'Brochure  Design', 'Social Media Buttons', '10 Amazing Websites']
+          - for (var c = 1; c <= worksNames.length; c++)
+            .col-md-3.col-sm-6.col-xs-12
+              .works-item
+                .works-item_img
+                  .works_hover-link
+                    button(type="button")
+                  img(src="img/works/works-item_"+c+".png")
+                .works-info
+                  .works-item_name= worksNames[c-1]
+                  .works-item_date June 15, 2016
