@@ -176,4 +176,14 @@ and (max-device-width : 480px) {
   .main-footer .footer-info {
     padding: 10px 15px;
   }
+  /*about*/
+  .about-content_main-img {
+    float: none;
+    width: 70%;
+    margin: 0 auto 15px;
+  }
+  .about-content .about-quote {
+    font-size: 14px;
+    margin-left: 30px;
+  }
 }
