@@ -186,6 +186,19 @@ and (max-device-width : 480px) {
     font-size: 14px;
     margin-left: 30px;
   }
+  /*blog*/
+  .blog-section {
+    padding-left: 0;
+    &_icon {
+      display: none;
+    }
+  }
+  .blog-section_pic > div,
+  .blog-section_pic > iframe,
+  .blog-section_pic > video,
+  .blog-section_pic > img {
+    max-height: 125px;
+  }
   /*portfolio*/
   .portfolio-content_filter {
     text-align: center;

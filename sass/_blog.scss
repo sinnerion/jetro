@@ -9,6 +9,9 @@
   padding-bottom: 50px;
   padding-left: 85px;
   background: url(../img/works-heading_bg.png) repeat-x center bottom, transparent;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &_icon {
     position: absolute;
     z-index: 50;
