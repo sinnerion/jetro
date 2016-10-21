@@ -1,0 +1,31 @@
+extends base
+block title
+  title Portfolio
+block page-heading
+  - thisHeading = "Portfolio"
+  include includes/page-heading
+block content
+  section.portfolio-content
+    .container
+      .row
+        .col-md-12
+          nav.portfolio-content_filter
+            ul.list-unstyled
+              - portfolioFilter = {'All': 'all', 'Print': 'print', 'Web': 'web', 'Photoshop': 'photoshop', 'Wordpress': 'wordpress'}
+                each val, index in portfolioFilter
+                  li
+                    +filterButton(val, index)(type="button")
+        .col-md-12
+          .row
+            - worksNames = ['Character  Design', 'Brochure  Design', 'Social Media Buttons', '10 Amazing Websites', 'Poster', 'Web  Graphic  Element', 'Brochure  Design', 'Big  buck  Bunney', 'Cartoon  Characters', 'Sticker  Design', 'Business  Cards', 'Slider  Plugin']
+            - for (var c = 1; c <= worksNames.length; c++)
+              div(class="col-md-3 col-sm-6 col-xs-12 portfolio-content_item")
+                .works-item
+                  .works-item_img
+                    .works_hover-link
+                      button(type="button")
+                    img(src="img/works/works-item_"+c+".png")
+                  .works-info
+                    .works-item_name= worksNames[c-1]
+                    .works-item_date June 15, 2016
+

@@ -1,0 +1,36 @@
+@import "vars";
+
+.portfolio-content {
+  &_filter {
+    margin-bottom: 35px;
+    ul {
+      font-size: 0;
+    }
+    li {
+      display: inline-block;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    button {
+      display: block;
+      border: none;
+      outline: none;
+      font-family: $accent-font;
+      background: transparent;
+      line-height: 30px;
+      padding: 0 10px;
+      color: $gray-txt;
+      font-size: 14px;
+      &.active,
+      &:hover {
+        color: $main-txt;
+        background: $custom-red;
+      }
+    }
+  }
+  &_item {
+    margin-bottom: 40px;
+  }
+}

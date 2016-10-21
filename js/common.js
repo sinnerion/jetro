@@ -40,4 +40,21 @@ $(document).ready(function(){
     $('.more-btn').click(function(){
         $(this).fadeOut(100).siblings('.more-block').slideDown(250);
     });
+
+    // Portfolio filter
+    $('#filter').on('click', 'button', function () {
+        $('.active-button').removeClass('active-button');
+        $(this).addClass('active-button');
+        var buttonAttr = $(this).attr('data-filter');
+        $('.section-block').each(function(){
+            var blockAttr = $(this).attr('data-filter');
+            if( blockAttr !== buttonAttr && buttonAttr !== 'all' ) {
+                $(this).addClass('block-hidden');
+            } else if( previewAttr === buttonAttr) {
+                $(this).removeClass('block-hidden');
+            } else {
+                $('.section-block').removeClass('block-hidden');
+            }
+        });
+    });
 });

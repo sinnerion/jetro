@@ -1,3 +1,6 @@
 mixin link(href, name)
   //- attributes == {class: "btn"}
   a(class!=attributes.class href=href)= name
+mixin filterButton(data_filter, name)
+  //- attributes == {class: "btn"}
+  button(class!=attributes.class data-filter=data_filter)= name
