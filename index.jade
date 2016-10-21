@@ -1,13 +1,12 @@
 extends base
-include includes/mixins
 block title
   title Main page
 block content
-  section.slider.top-sides
+  section.slider-section.top-sides
     div.container
       div.row
         div.col-md-12
-          div.main-slider
+          div.slider.main-slider
             - for (var a = 1; a < 10; a++)
               div.main-slider_item
                 img(src="http://placehold.it/1024x400")

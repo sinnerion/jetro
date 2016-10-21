@@ -2,12 +2,12 @@ $(document).ready(function(){
     $('.more-block').slideUp();
 
     // Main nav
-    $('.main-nav a').click(function(){
+    $('.main-nav a, .my-pagination a').click(function(){
         $('a.active').removeClass('active');
         $(this).addClass('active');
     });
 
-    // Main slider
+    // Sliders
     $('.main-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -26,6 +26,14 @@ $(document).ready(function(){
         dots: false,
         centerMode: false,
         focusOnSelect: true
+    });
+    $('.blog-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        prevArrow: '<button class="main-slider_controls main-slider_prev fa fa-chevron-left" aria-hidden="true"></button>',
+        nextArrow: '<button class="main-slider_controls main-slider_next fa fa-chevron-right" aria-hidden="true"></button>'
     });
 
     // More blocks

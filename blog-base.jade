@@ -1,0 +1,13 @@
+extends base
+block title
+  title Blog
+block page-heading
+  - thisHeading = "Blog"
+  include includes/page-heading
+block content
+  .container
+    .row
+      .col-md-9.col-sm-8.col-xs-12
+        block blog-content
+
+      include includes/sidebar

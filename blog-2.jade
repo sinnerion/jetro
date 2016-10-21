@@ -1,0 +1,92 @@
+extends blog-base
+block blog-content
+  .blog-content
+    section.blog-section
+      .blog-section_icon
+        a(href="#", class="blog-blog-icon_1")
+      .blog-section_pic.slider.blog-slider
+        - for (var a = 1; a < 8; a++)
+        .blog-slider_item
+          img(src="http://placehold.it/670x300")
+          //img(src="img/blog-slider/slider-img-"+a+".png")
+      .blog-section_description
+        .row
+          .col-md-2.col-sm-4.col-xs-4
+            .blog-section_description-info
+              span Lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span Lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span Lorem
+              p
+                | Lorem | Ipsum
+          .col-md-10.col-sm-8.col-xs-8
+            h4.blog-section_description-title Lorem ipsume dolore
+            p.blog-section_description-txt Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+            p.blog-section_description-txt Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+    section.blog-section
+      .blog-section_icon
+        a(href="#", class="blog-blog-icon_3")
+      .blog-section_pic
+        iframe(src="https://player.vimeo.com/video/182071355?color=ffffff&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+      .blog-section_description
+        .row
+          .col-md-2.col-sm-4.col-xs-4
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+          .col-md-10.col-sm-8.col-xs-8
+            h4.blog-section_description-title Lorem ipsume dolore
+            p.blog-section_description-txt Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+            p.blog-section_description-txt Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+    section.blog-section
+      .blog-section_icon
+        a(href="#", class="blog-blog-icon_2")
+      .blog-section_pic
+        img(src="img/blog/blog-img.png")
+      .blog-section_description
+        .row
+          .col-md-2.col-sm-4.col-xs-4
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+            .blog-section_description-info
+              span lorem
+              p
+                | Lorem | Ipsum
+          .col-md-10.col-sm-8.col-xs-8
+            h4.blog-section_description-title Lorem ipsume dolore
+            p.blog-section_description-txt Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.
+            p.blog-section_description-txt Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+    section.blog-section
+      .blog-section_icon
+        a(href="#", class="blog-blog-icon_4")
+      blockquote.blog-section_quote Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you.
+    section.blog-section
+      .blog-section_icon
+        a(href="#", class="blog-blog-icon_5")
+      .blog-section_description
+        h4.blog-section_description-title
+          | Lorem ipsum dolore
+          span www.bestpsdfreebies.com
+        p.blog-section_description-txt Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei.
+  block pagination
+    include includes/pagination-2

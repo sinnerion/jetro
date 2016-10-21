@@ -1,6 +1,6 @@
 extends base
 block title
-  title Main page
+  title About us
 block page-heading
   - thisHeading = "About us"
   include includes/page-heading
@@ -34,28 +34,5 @@ block content
               p.about_alert-text.about_alert-text_orange Alert Text
             .col-md-12
               p.about_alert-text.about_alert-text_blue Alert Text
-      .col-md-3.col-sm-4.hidden-xs
-        aside.sidebar
-          .sidebar_block
-            .sidebar_block-title AbouT  Jetro
-            p.sidebar_block-body Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.
-          .sidebar_block
-            .sidebar_block-title Categories
-            .sidebar_block-body
-              ul.list-unstyled
-                li Video (3)
-                li Sports (5)
-                li Media (2)
-                li Entertainment (7)
-                li Life (4)
-                li Super Cool Stuff (8)
-          .sidebar_block
-            .sidebar_block-title Photo  Gallery
-            .sidebar_block-body
-              .row
-                - for (var d = 1; d < 9; d++)
-                  .col-md-3.col-sm-6.no-padding
-                    .sidebar_block-photo
-                      a(href="#")
-                        img(src="http://placehold.it/50x50")
-                      //img(src="img/about/sidebar-gallery_photo-"+d+".png")
+      block sidebar
+        include includes/sidebar

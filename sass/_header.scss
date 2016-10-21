@@ -1,0 +1,36 @@
+@import "vars";
+
+/* Header */
+.main-header {
+  line-height: 78px;
+  .main-nav.navbar-default {
+    background: transparent;
+    margin: 0;
+    padding: 15px 0 0;
+    border: none;
+    li a {
+      text-transform: uppercase;
+      font-family: $accent-font;
+      color: $gray-txt;
+    }
+    li:last-child a {
+      padding-right: 0;
+    }
+    li a:hover,
+    li a.active {
+      color: $custom-red;
+    }
+    .navbar-header {
+      margin-right: 0;
+    }
+    .navbar-toggle {
+      margin-right: 0;
+    }
+    .container-fluid {
+      padding-right: 0;
+    }
+  }
+}
+#main-nav {
+  padding: 0;
+}
