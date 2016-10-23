@@ -12,12 +12,30 @@
 @import "about";
 @import "blog";
 @import "portfolio";
+@import "contact";
 
 @import "footer";
 @include all-footer-social-sprites;
 @include all-features-sprites;
 
 /* General */
+*::-webkit-input-placeholder {
+  color: $custom-red;
+  opacity: 1;
+}
+*:-moz-placeholder {
+  color: $custom-red;
+  opacity: 1;
+}
+*::-moz-placeholder {
+  color: $custom-red;
+  opacity: 1;
+}
+*:-ms-input-placeholder {
+  color: $custom-red;
+  opacity: 1;
+}
+
 body {
   font-family: $normal-font;
   background: url('../img/main-bg.png') no-repeat center;

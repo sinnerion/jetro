@@ -159,7 +159,14 @@ and (max-device-width : 991px) {
 @media only screen
 and (min-device-width : 320px)
 and (max-device-width : 767px) {
-
+  .contact-map iframe {
+    height: 350px;
+  }
+  .contact-data {
+    &_links {
+      margin-bottom: 20px;
+    }
+  }
 }
 @media only screen
 and (max-device-width : 480px) {
