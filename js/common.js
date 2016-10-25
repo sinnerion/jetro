@@ -42,18 +42,18 @@ $(document).ready(function(){
     });
 
     // Portfolio filter
-    $('#filter').on('click', 'button', function () {
+    $('#filter').on('click', 'button', function() {
         $('.active-button').removeClass('active-button');
         $(this).addClass('active-button');
         var buttonAttr = $(this).attr('data-filter');
-        $('.section-block').each(function(){
+        $('.portfolio-content_item').each(function(){
             var blockAttr = $(this).attr('data-filter');
             if( blockAttr !== buttonAttr && buttonAttr !== 'all' ) {
                 $(this).addClass('block-hidden');
-            } else if( previewAttr === buttonAttr) {
+            } else if( blockAttr === buttonAttr) {
                 $(this).removeClass('block-hidden');
             } else {
-                $('.section-block').removeClass('block-hidden');
+                $('.portfolio-content_item').removeClass('block-hidden');
             }
         });
     });

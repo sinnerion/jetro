@@ -1,5 +1,6 @@
 @import "vars";
 
+/* Portfolio page */
 .portfolio-content {
   &_filter {
     margin-bottom: 35px;
@@ -23,7 +24,7 @@
       padding: 0 10px;
       color: $gray-txt;
       font-size: 14px;
-      &.active,
+      &.active-button,
       &:hover {
         color: $main-txt;
         background: $custom-red;
@@ -32,5 +33,32 @@
   }
   &_item {
     margin-bottom: 40px;
+  }
+  &_item.block-hidden {
+    opacity: .5;
+    .works-item {
+      cursor: default;
+    }
+    .works_hover-link {
+      display: none;
+    }
+  }
+}
+
+/* Item page */
+.portfolio-item {
+  margin-bottom: 50px;
+  &_img {
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+    }
+  }
+  &_description p {
+    font-size: 12px;
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
